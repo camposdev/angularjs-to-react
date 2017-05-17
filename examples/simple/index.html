@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+  <title>AngularJS to React - simple example</title>
+</head>
+<body>
+  
+  <div class="container" ng-controller="mainController as ctrl">
+    <header style="padding: 50px 0; text-align: center;">
+      <h1>AngularJS to React</h1>
+      <h4><i>simple example</i></h4>
+    </header>
+
+    <p style="text-align: center;">In this example was setted an initial number to counter. (10)</p>
+
+    <small style="text-align: center; display: block; margin-bottom: 10px;">This is a React component</small>
+    
+    <counter-component initial-counter="ctrl.initialCounter"></counter-component>
+
+    <footer style="text-align: center; margin-top: 30px;">
+      <a class="github-button" href="https://github.com/camposdev/angularjs-to-react" data-show-count="true" aria-label="Star camposdev/angularjs-to-react on GitHub">Star</a>
+      <a class="github-button" href="https://github.com/camposdev/angularjs-to-react/fork" data-show-count="true" aria-label="Fork camposdev/angularjs-to-react on GitHub">Fork</a>
+      <br>
+      <a href="../../"><small>Back</small></a>
+      <a href="https://github.com/camposdev/angularjs-to-react"><small>Readme</small></a>
+    </footer>
+  </div>
+
+  <script src="../vendors.min.js"></script>
+  <script src="dist/simple.js"></script>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+</html>
